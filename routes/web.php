@@ -16,3 +16,7 @@ Route::get('/', function () {
 });
 
 Route::get('/flow4','YamlController@getAll');
+
+Route::resource('users','UserController');
+
+Route::get('tes','UserController@tes');
